@@ -10,62 +10,24 @@ body {
 
 .dropdown {
   opacity: 0;
-  visibility: hidden;
-  transform: translateY(10px);
-  transition: opacity .3s ease, transform .3s ease;
+  height: 0px;
+  transform: translateY(-10%);
+  padding:0px;
+  transition: opacity 0.3s ease-in-out, transform 0.2s ease-in-out, height 0.2s ease-in-out, padding 0.2 ease-in-out;
 }
 
-/* Dropdown is visible */
 .dropdown-enter {
   opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
+  height: 500px;
+  padding:40px;
+  transform: translateY(0%);
 }
 
-/* Dropdown is about to be hidden */
 .dropdown-exit {
   opacity: 0;
-  visibility: hidden;
-  transform: translateY(-10px);
-}
-/* Add appropriate positioning styles to the sub-dropdown */
-.sub-dropdown {
-  position: absolute;
-  top: 0;
-  left: 100%;
-
-  /* Adjust as needed */
-}
-
-.sub-dropdown2 {
-  position: absolute;
-  left: 100%;
- /* Adjust as needed */
-}
-.sub-dropdown3 {
-  position: absolute;
-  top: 30%;
-  left: 100%;
- /* Adjust as needed */
-}
-
-.dropdown li:hover > .sub-dropdown {
-  display: block;
-  animation: slideleft .3s
-}
-
-.dropdown li:hover > .sub-dropdown2 {
-  display: block;
-  animation: slideleft .3s
-}
-.dropdown li:hover > .sub-dropdown3 {
-  display: block;
-  animation: slideleft .3s
-}
-
-/* Adjust the positioning of the submenu */
-.sub-dropdown .dropdown-menu {
-  margin-top: 0; /* Adjust as needed */
+  height: 0px;
+  padding:0px;
+  transform: translateY(-10%);
 }
 
 .sidebar-hidden {
@@ -80,93 +42,28 @@ body {
   pointer-events: auto;
 }
 
-/* Apply hover color only to immediate child <a> elements */
-.sidebar-subdropdown > li > a:hover {
-  color: rgb(251 146 60);
+
+.content p{
+  @apply text-xs sm:text-sm md:text-base text-gray-300
 }
-
-/* Apply hover color only to immediate child <a> elements of nested submenu */
-.sidebar-subdropdown > li > ul > li > a:hover {
-  color: rgb(251 146 60);
-}
-
-.sidebar-subdropdown li a {
-  color: inherit;
-  text-decoration: none;
-  display: block;
-}
-
-.sidebar-subdropdown li {
-  transition: background-color 0.3s;
-}
-
-.sidebar-subdropdown li:hover {
-  background-color: #1e293b; /* Apply your hover background color here */
-}
-
-.sidebar-visible li > .sidebar-subdropdown{
-
-  animation: slidedown .3s;
-}
-
-
-.arrow-down {
-  transition: transform 0.3s;
-}
-
-.arrow-up {
-  transform: rotate(360deg);
-  transition: transform 0.3s;
-}
-
-
-@keyframes slideup {
-  0% {
-    opacity: 0;
-    transform: translateY(18px);
+.content-list {
+  @apply text-xs border-l-[1px] border-slate-600 sm:text-sm md:text-base list-none  pl-8 text-gray-300
   }
-
-  100%{
-    opacity: 1;
-    transform: none;
+  
+  .content-list li::marker {
+    content: "> ";
   }
-}
-@keyframes slideleft {
-  0% {
-    opacity: 0;
-    transform: translateX(18px);
+  
+  .content-p {
+    @apply text-xs sm:text-sm md:text-base text-white
   }
-
-  100%{
-    opacity: 1;
-    transform: none;
+  .content-h1 {
+    @apply text-3xl sm:text-4xl md:text-5xl text-center my-6 sm:my-8 md:my-10 text-white border-b-[2px] border-slate-500 pb-14
   }
-}
-@keyframes slidedown {
-  0% {
-    opacity: 0;
-    transform: translateY(-18px);
+  .content-h2 {
+    @apply  text-2xl sm:text-3xl md:text-4xl  text-left my-4 sm:my-6 md:my-8 text-secondary border-b-[1px] border-slate-500 pb-4
+  
   }
-
-  100%{
-    opacity: 1;
-    transform: none;
+  .content-h3 {
+    @apply text-lg sm:text-xl md:text-2xl text-secondary my-4 mt-4
   }
-}
-
-
-.arrow {
-  border-top: 20px solid transparent;
-  border-bottom: 60px solid transparent;
-  border-left: 20px solid black;
-  width: 0;
-  height: 0;
-}
-
-.arrow::before {
-  content:'';
-  left: 0;
-  width: 30px;
-  height: 15px;
-  background-color: black;
-}
