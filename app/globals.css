@@ -2,10 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+/* Hide the scrollbar but allow scrolling in WebKit browsers */
+body::-webkit-scrollbar {
+  width: 0;
 }
 
 .dropdown {
@@ -67,3 +66,16 @@ body {
   .content-h3 {
     @apply text-lg sm:text-xl md:text-2xl text-secondary my-4 mt-4
   }
+
+  .footer-link {
+    @apply text-gray-400 hover:text-white transition-all hover:underline-offset-4 
+  }
+
+  input,
+textarea,
+button,
+select,
+a,
+div {
+    -webkit-tap-highlight-color: transparent;
+}

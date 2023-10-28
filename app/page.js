@@ -5,6 +5,7 @@ import Stats from '@/components/Stats'
 import DiscountBanner from '@/components/DiscountBanner'
 import Content from '@/components/Content'
 import HomeReviews from '@/components/HomeReviews'
+import Footer from '@/components/Footer'
 export default function Home() {
   return (
     <>
@@ -15,6 +16,7 @@ export default function Home() {
     <DiscountBanner />
     <Content />
     <HomeReviews />
+     {/* <Footer /> */}
     </>
   )
 }

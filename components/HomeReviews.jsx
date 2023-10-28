@@ -50,12 +50,13 @@ const HomeReviews = () => {
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
   };
+
   return (
     <div className="flex flex-col  py-16 bg-slate-300">
-      <h3 className="text-4xl pb-20 text-center">
-        Our Reviews<span className="text-secondary">.</span>
+      <h3 className="text-4xl pb-14 text-center font-extrabold">
+        Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-purple-500 ">Reviews</span>.
       </h3>
-      <div className="flex justify-between px-56">
+      <div className="flex flex-col justify-center items-center lg:flex-row lg:justify-between px-0 lg:px-16 xl:px-32 2xl:px-52">
         <div className="flex flex-col justify-center items-center">
           <Image
             src={quotemark}
@@ -66,7 +67,7 @@ const HomeReviews = () => {
 
           <Slider
             {...settings}
-            className="max-w-lg flex justify-center items-center py-4"
+            className="max-w-[250px] md:max-w-sm flex justify-center items-center py-0 lg:py-4 lg:mx-12"
           >
             <Review
               review={
@@ -99,9 +100,9 @@ const HomeReviews = () => {
         <Image
           src={reviewsimage}
           alt="image for reviews"
-          width={650}
-          height={650}
-          className="object-cover"
+          width={450}
+          height={450}
+          className="object-cover opacity-50 px-2 pt-3"
         />
       </div>
     </div>
@@ -110,8 +111,8 @@ const HomeReviews = () => {
 
 const Review = ({ review }) => {
   return (
-    <div className="px-4 flex flex-col justify-between items-center">
-      <p className="text-center pt-8 text-lg">{review} </p>
+    <div className="py-0 sm:px-0 sm:py-8 lg:px-4 lg:py-10 flex flex-col justify-center items-center">
+      <p className="text-center text-lg pt-10">{review} </p>
       <Rating value={5} name="read-only" readOnly />
     </div>
   );

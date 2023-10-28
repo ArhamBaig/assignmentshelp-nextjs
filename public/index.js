@@ -5,8 +5,11 @@ import menu from "./assets/menu.svg";
 import arrowdown from "./assets/arrow-down.svg";
 import logo from "./assets/logo.png";
 
+//hero images
+import heroimage from "./assets/hero-image.png";
+
 //bg images
-import heroimage from "./assets/hero-background.jpg";
+import bgheroimage from "./assets/hero-background.jpg";
 import statsbgimage from "./assets/paper-texture-design.jpg";
 
 //top services
@@ -33,8 +36,8 @@ import sitejabberlogo from "./assets/sitejabberlogo.png";
 import statsimage from "./assets/stats-image.png"
 
 //review images
-import quotemark from "./assets/quotemark.jpg";
-import reversequotemark from "./assets/reverse-quotemark.jpg"
+import quotemark from "./assets/quotemark.png";
+import reversequotemark from "./assets/reverse-quotemark.png"
 import reviewsimage from "./assets/reviews.jpg"
 
 export {
@@ -66,9 +69,10 @@ export {
   casestudyico,
   reportico,
 
-  //bg images
+  //hero images
   statsbgimage,
   heroimage,
+  bgheroimage,
 
   //navbar images
   logo,

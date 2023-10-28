@@ -6,7 +6,7 @@ import  { useState, useEffect } from 'react';
 const DiscountBanner = () => {
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(15); // Start from 15 minutes
-  const [seconds, setSeconds] = useState(0);
+  const [seconds, setSeconds] = useState(40);
 
   useEffect(() => {
     const target = new Date(); // Start from the current time
@@ -67,13 +67,10 @@ const DiscountBanner = () => {
               <div className="bg-black/50 rounded-lg  w-full h-15 p-2">
               <p className="text-xs text-gray-300">Seconds</p>
 
-              <span className="text-white">
-                {seconds}
-              </span>
+              <span className="text-white">{seconds}</span>
               </div>
             </div>
             <p className="text-primary font-bold text-lg p-2 text-right">... remaining</p>
-
           </div>
         </div>
       </div>
