@@ -40,7 +40,26 @@ import quotemark from "./assets/quotemark.png";
 import reversequotemark from "./assets/reverse-quotemark.png"
 import reviewsimage from "./assets/reviews.jpg"
 
+//footer icons
+import facebook from "./assets/icon-facebook.png";
+import pinterest from "./assets/icon-pinterest.png";
+import twitter from "./assets/icon-twitter.png";
+import instagram from "./assets/icon-instagram.png";
+import tumblr from "./assets/icon-tumblr.png";
+import flickr from "./assets/icon-flickr.png";
+import linkedin from "./assets/icon-linkedin.png";
+
 export {
+//footer icons
+
+  facebook,
+  pinterest,
+  twitter,
+  instagram,
+  tumblr,
+  flickr,
+  linkedin,
+
   //review images
   quotemark,
   reversequotemark,

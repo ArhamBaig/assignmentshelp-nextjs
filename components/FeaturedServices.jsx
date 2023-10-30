@@ -25,7 +25,7 @@ const FeaturedServices = () => {
 const Service = ({image,alt,title,desc}) => {
     return(
         <div className="p-2 px-2 flex flex-col h-[150px] sm:h-[200px] m-1 rounded-lg border-[1px] border-secondary hover:shadow-lg hover:scale-105 cursor-pointer transition-all group relative bg-white hover:bg-pink-600/10 duration-200 ">
-            <div className="absolute top-0 left-0 w-full h-0 group-hover:h-16 bg-gradient-to-b from-pink-400 via-secondary to-pink-700 rounded-t-lg transition-all duration-200 delay-200 -z-10"></div>
+            <div className="absolute top-0 left-0 w-full h-0 group-hover:h-14 bg-gradient-to-b from-pink-400 via-secondary to-pink-700 rounded-t-lg transition-all duration-200 delay-200 -z-10"></div>
             <div className=" rounded-lg items-center grid grid-cols-12 w-full h-12 ">
             <Image src={image} alt={alt}  className="p-1 col-span-3" width={45} height={45} />
             <h3 className="text-lg sm:text-xl md:text-2xl py-1 font-bold col-span-9  text-rose-900 group-hover:text-white transition-all delay-200 duration-200">{title}</h3>

@@ -17,8 +17,8 @@ const ValueProposition = () => {
   return (
     <div className="my-20  flex flex-col justify-center items-center">
       <div className="grid grid-cols-1 lg:grid-cols-3  max-w-[1600px] mb-10 ">
-        <div className="flex flex-col gap-5 border-b-[1px] lg:border-r-[1px] lg:border-b-0 border-secondary ml-12 pl-4 mr-16 pr-4 pb-4 mb-4 col-span-1">
-          <h2 className="text-4xl  text-center font-semibold">Why Us<span className="text-secondary font-semi ">?</span></h2>
+        <div className="flex flex-col gap-5 border-b-[1px] lg:border-r-[1px] lg:border-b-0 border-secondary mx-5 lg:ml-12 pl-4 lg:mr-16 pr-4 pb-4 mb-4 col-span-1">
+          <h2 className="text-4xl  text-center font-semibold">Why Us<span className="text-secondary">?</span></h2>
           <p className="text-justify ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde et,
             vel quis debitis quas atque fugiat eveniet! Blanditiis autem

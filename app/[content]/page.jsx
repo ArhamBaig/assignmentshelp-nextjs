@@ -74,7 +74,7 @@ const ContentPage = async (props) => {
     {/* <Heroforcontent heading1={contentJson.title} heading2={contentJson.description} /> */}
     <div className="container mx-auto ">
       <div className="mx-auto w-full max-w-4xl p-2 sm:p-5 lg:p-8 px-3 ">
-        <div>{content}</div>
+        <div className="mt-24">{content}</div>
       </div>
     </div>
     </>
