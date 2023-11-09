@@ -6,7 +6,7 @@ import { statsbgimage, statsimage } from "@/public";
 const Stats = () => {
   return (
     <div className="relative pb-32 pt-20">
-    <Image src={statsbgimage} alt="hero background image" fill={true} className="object-cover bg-cover bg-center opacity-60 -z-10" />
+    <Image src={statsbgimage} alt="hero background image" fill={true} className="object-cover  opacity-60 -z-10" />
 
       <div className="container mx-auto lg:flex-row flex-col justify-center items-center  z-10">
       <h2 className="text-center lg:text-left font-extrabold capitalize  pb-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl  text-neutral-800">

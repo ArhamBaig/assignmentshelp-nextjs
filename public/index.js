@@ -3,14 +3,18 @@ import close from "./assets/close.svg";
 import arrowUp from "./assets/arrow-up.svg";
 import menu from "./assets/menu.svg";
 import arrowdown from "./assets/arrow-down.svg";
-import logo from "./assets/logo.png";
+
+//logo variants
+import logolandscape from "./assets/assignment-help-logo-landscape.png";
+import logoportrait from "./assets/assignment-help-logo-portrait.png"
 
 //hero images
 import heroimage from "./assets/hero-image.png";
 
 //bg images
-import bgheroimage from "./assets/hero-background.jpg";
+import bgheroimage from "./assets/hero-background.png";
 import statsbgimage from "./assets/paper-texture-design.jpg";
+import bgburntpaper from "./assets/burnt-paper-texture-background.png"
 
 //top services
 import essayico from "./assets/service-essay.png";
@@ -50,6 +54,8 @@ import flickr from "./assets/icon-flickr.png";
 import linkedin from "./assets/icon-linkedin.png";
 
 export {
+  bgburntpaper,
+
 //footer icons
 
   facebook,
@@ -94,9 +100,13 @@ export {
   bgheroimage,
 
   //navbar images
-  logo,
   menu,
   close,
   arrowdown,
   arrowUp,
+
+  //logo variants
+  logolandscape,
+  logoportrait,
+
 };

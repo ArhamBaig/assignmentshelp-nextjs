@@ -46,11 +46,11 @@ body::-webkit-scrollbar {
 }
 
 .content p{
-  @apply text-sm md:text-base text-black leading-6
+  @apply text-sm md:text-base text-gray-900 leading-6
 }
 
 .content h1 {
-  @apply text-3xl sm:text-4xl md:text-5xl text-center my-6 sm:my-8 md:my-10 relative py-8 border-b-[2px] rounded-3xl  border-t-[1px] border-secondary font-black text-gray-900  px-5
+  @apply text-3xl sm:text-4xl md:text-5xl text-center my-6 sm:my-8 md:my-10 relative py-8 border-y-[1px] rounded-3xl border-secondary font-black text-gray-900  px-5
 }
 
 .content h2 {
@@ -82,10 +82,11 @@ body::-webkit-scrollbar {
 
 .content ul li::marker {
   content: "○  ";
+  color: #f24080;
 }
 
 .text-gradient {
-  @apply text-transparent bg-clip-text bg-gradient-to-r from-rose-500 via-purple-500 to-secondary
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-secondary
 }
 
 

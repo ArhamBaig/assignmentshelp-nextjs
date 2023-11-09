@@ -1,7 +1,7 @@
 "use client";
 
 import { useState,useEffect } from "react";
-import { menu, close, arrowUp, arrowdown, logo } from "@/public";
+import { menu, close, arrowUp, arrowdown, bgheroimage, logolandscape } from "@/public";
 import { navLinks } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
@@ -59,9 +59,9 @@ const Navbar = () => {
           <div className="flex px-5">
             <Link href="/">
               {" "}
-              <Image height={60} width={60} alt="Go to home" src={logo} />
+              <Image height={200} width={200} alt="Go to home" src={logolandscape} />
             </Link>
-            <ul className=" hidden lg:flex  gap-10 lg:gap-12  px-20 items-center ">
+            <ul className=" hidden lg:flex  gap-10 lg:gap-12 pl-16 items-center ">
               {navLinks.map((link) => (
                 <li
                   className="flex cursor-default  text-white relative "
@@ -105,11 +105,18 @@ const Navbar = () => {
    
         <div
         className={`dropdown flex justify-center duration-300 text-white w-screen bg-gradient-to-b from-primary from-30% to-purple-900
-         transition-all ease-in-out 
+         transition-all ease-in-out relative 
         ${
             liActive === "Services" || liActive === "Universities" ? "dropdown-enter" : "dropdown-exit"
         }`}
       >
+          <Image
+        src={bgheroimage}
+        alt="hero background image"
+        fill={true}
+        className="object-cover opacity-10 -z-10 from"
+      />
+
         {navLinks.map((link) =>
           Array.isArray(link.dropdown) &&
           link.dropdown.length > 0 &&
