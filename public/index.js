@@ -1,3 +1,5 @@
+import favicon from "./assets/favicon.png";
+
 //navbar images
 import close from "./assets/close.svg";
 import arrowUp from "./assets/arrow-up.svg";

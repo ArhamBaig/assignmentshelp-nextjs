@@ -33,7 +33,7 @@ const Hero = () => {
           debitis dolore?
         </p>
         <button className="bg-secondary p-2 px-4 text-white text-xl rounded-full max-w-fit hover:bg-pink-800 transition-all duration-300">
-          CTA BUTTON
+          ORDER NOW
         </button>
       </div>
 
