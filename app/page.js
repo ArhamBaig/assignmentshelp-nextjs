@@ -16,7 +16,6 @@ export default function Home() {
     <DiscountBanner />
     <Content />
     <HomeReviews />
-    <Footer />
     </>
   )
 }

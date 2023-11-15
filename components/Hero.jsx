@@ -15,22 +15,25 @@ const Hero = () => {
 
       <div className=" w-72 sm:w-[400px] md:w-[600px] lg:w-[750px]  pt-32 pb-16 flex flex-col  justify-center items-center text-center lg:items-start lg:text-left z-10">
         <h1 className="text-white text-3xl sm:text-4xl lg:text-5xl xl:text-6xl mb-10 font-bold relative mt-24 uppercase">
-          Hassle-Free Academic{" "}
+        Introducing  
           <Lottie
             animationData={animationData}
             className=" h-[220px] w-[220px] absolute -top-44 left-[15%] sm:left-[33%] lg:-left-12"
             loop={true}
           />
+          {" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 via-purple-500 to-secondary">
-            Writing Services
+          <strong>Assignment Help UK</strong>
           </span>{" "}
-          at Assignment Help UK!
+          – Where
+Academic Papers Get a Stylish Makeover!
         </h1>
         <p className="text-slate-300 mb-10 text-lg">
-          description Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Non voluptates qui eaque magni sint odit quod ut inventore. Aperiam,
-          enim. Corrupti recusandae laboriosam natus nostrum, eveniet eos saepe
-          debitis dolore?
+        Welcome to AssignmentHelpUK, where we&#39;ve been rocking the scholarly scene for a whopping 15 years!
+We&#39;re not just your run-of-the-mill <strong>assignment help</strong> providers; we&#39;re your academic comrades. From the
+first essay to the final thesis, our expert team caters to students worldwide, chasing an A+ in the
+competitive arena. We get it – the academic battle is brutal. That&#39;s why we&#39;re here, adding a dash of flair
+to your educational stage.
         </p>
         <button className="bg-secondary p-2 px-4 text-white text-xl rounded-full max-w-fit hover:bg-pink-800 transition-all duration-300">
           ORDER NOW
@@ -40,7 +43,7 @@ const Hero = () => {
       <Image
         src={heroimage}
         alt="hero background image"
-        className=" pt-0 lg:pt-20 pb-16 lg:block hidden z-10 opacity-75"
+        className=" pt-0 lg:pt-20 pb-16 lg:block hidden z-10 "
         height={600}
         width={600}
       />

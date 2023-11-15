@@ -1,7 +1,7 @@
 "use client"
 import { useRouter } from 'next/navigation'
 const RedirectFunction = () => {
-    let router = useRouter()
+    const router = useRouter()
     router.push("/")
 
 }

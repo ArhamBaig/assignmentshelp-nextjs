@@ -15,20 +15,21 @@ const Stats = () => {
           {" "}
           Numbers{" "}
           </span>
-           talk.
+           talk!
         </h2>
 
         <div className="flex flex-col lg:flex-row justify-center items-center">
   
           <div className="grid grid-cols-2 items-center justify-center h-fit xl:w-[750px]">
             <StatCounter name={"rating"} value={4.8} decimal={"."} decimalValue={1} suffix={"/5"}/>
-            <StatCounter name={"assignment"} value={43} suffix={"K+"} />
-            <StatCounter name={"client"} value={9} suffix={"K+"} />
-            <StatCounter name={"Writing Services"} value={40} suffix={"+"} />
-            <StatCounter name={"Writing Services"} value={40} suffix={"+"} />
+            <StatCounter name={"successful projects"} value={67} suffix={"K+"} />
+            <StatCounter name={"client"} value={35} suffix={"K+"} />
+            <StatCounter name={"Writing Services"} value={70} suffix={"+"} />
+            <StatCounter name={"score guaranteed"} value={80} suffix={"+"} />
+            <StatCounter name={"satisfaction"} value={100} suffix={"%"} />
           </div>
           <div className="px-5 lg:px-24">
-            <Image src={statsimage} alt="statstics image" width={650} height={500} className="opacity-80"/>
+            <Image src={statsimage} alt="statstics image" width={650} height={500}/>
           </div>
         </div>
       </div>
@@ -39,7 +40,6 @@ const Stats = () => {
 
 const StatCounter = ({
   name,
-
   value,
   decimal,
   decimalValue,
@@ -55,7 +55,7 @@ const StatCounter = ({
           decimals={decimalValue}
           suffix={suffix}
           delay={0.75}
-          duration={5}
+          duration={3}
           enableScrollSpy
           scrollSpyOnce
           

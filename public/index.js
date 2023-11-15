@@ -1,5 +1,3 @@
-import favicon from "./assets/favicon.png";
-
 //navbar images
 import close from "./assets/close.svg";
 import arrowUp from "./assets/arrow-up.svg";
@@ -8,8 +6,9 @@ import arrowdown from "./assets/arrow-down.svg";
 
 //logo variants
 import logolandscape from "./assets/assignment-help-logo-landscape.png";
-import logoportrait from "./assets/assignment-help-logo-portrait.png"
-
+import logoportrait from "./assets/assignment-help-logo-portrait.png";
+import logowhiteportrait from "./assets/assignment-help-logo-portrait-white.png";
+import logoblackportrait from "./assets/assignment-help-logo-portrait-black.png";
 //hero images
 import heroimage from "./assets/hero-image.png";
 
@@ -54,12 +53,14 @@ import instagram from "./assets/icon-instagram.png";
 import tumblr from "./assets/icon-tumblr.png";
 import flickr from "./assets/icon-flickr.png";
 import linkedin from "./assets/icon-linkedin.png";
+import whiteemail from "./assets/white-email.png";
+import whitelocation from "./assets/white-location.png";
+import whitephone from "./assets/white-phone.png"
 
 export {
   bgburntpaper,
 
 //footer icons
-
   facebook,
   pinterest,
   twitter,
@@ -67,6 +68,9 @@ export {
   tumblr,
   flickr,
   linkedin,
+  whitelocation,
+  whitephone,
+  whiteemail,
 
   //review images
   quotemark,
@@ -110,5 +114,6 @@ export {
   //logo variants
   logolandscape,
   logoportrait,
-
+  logowhiteportrait,
+  logoblackportrait,
 };

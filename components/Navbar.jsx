@@ -1,5 +1,4 @@
 "use client";
-
 import { useState,useEffect } from "react";
 import { menu, close, arrowUp, arrowdown, bgheroimage, logolandscape } from "@/public";
 import { navLinks } from "@/constants";
@@ -166,7 +165,7 @@ const Navbar = () => {
                               <Link key={subSubLink.title} href={subSubLink.href} className=" w-fit">
                                 <li
                                   onClick={handleMouseClickLowerDiv("")}
-                                  className={`p-2 hover:text-orange-600 transition-all w-fit`}
+                                  className={`p-2 hover:text-secondary transition-all w-fit`}
                                 >
                                   {subSubLink.title}
                                 </li>
@@ -192,11 +191,11 @@ const Navbar = () => {
       <div
         className={`${
           sidebarToggle ? "sidebar-visible" : "sidebar-hidden"
-        } p-6 bg-slate-700 text-slate-200  right-0 top-0 h-full w-full fixed z-40 transition-all`}
+        } p-6 bg-gradient-to-b from-primary to-purple-800 text-white right-0 top-0 h-full w-full fixed z-40 transition-all`}
       >
         {/* Close Button inside Sidebar */}
         <div className="relative flex justify-between pt-2">
-          <h2 className="px-3 text-2xl">BESTESSAYWRITER</h2>
+          <h2 className="px-3 text-2xl"></h2>
           <Image
             src={close}
             alt="Close menu"
@@ -213,12 +212,12 @@ const Navbar = () => {
                 {/* link.href goes here */}
                 <Link
                   href="#"
-                  className="flex justify-between bg-slate-600  rounded-sm"
+                  className="flex justify-between bg-purple-800  rounded-sm"
                
                 >
                   <p className="py-1 px-2">{link.title}</p>
                   {link.dropdown && (
-                    <div className="px-2 flex justify-center items-center rounded-r-sm bg-slate-800"    
+                    <div className="px-2 flex justify-center items-center rounded-r-sm bg-purple-950"    
                     onClick={() =>
                       setSidebarLiActive((prev) =>
                         prev === link.title ? "" : link.title
@@ -242,12 +241,12 @@ const Navbar = () => {
                     {link.dropdown.map((subLink) => (
                       <li key={subLink.title} className="py-1 mx-2  cursor-pointer">
                         <Link
-                          className={`flex justify-between bg-slate-900  rounded-sm `}
+                          className={`flex justify-between bg-purple-800  rounded-sm `}
                           href="#"
                         >
                           <p className="py-[2px] px-2">{subLink.title}</p>
                           {subLink.subdropdown && (
-                            <div className="px-2 flex justify-center items-center rounded-r-sm bg-slate-800"
+                            <div className="px-2 flex justify-center items-center rounded-r-sm bg-purple-950 "
                             onClick={() =>
                               setSidebarSubLiActive((prev) =>
                                 prev === subLink.title ? "" : subLink.title

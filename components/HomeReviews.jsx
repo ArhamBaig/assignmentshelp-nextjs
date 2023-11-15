@@ -52,11 +52,16 @@ const HomeReviews = () => {
   };
 
   return (
-    <div className="flex flex-col  py-16 bg-slate-300">
+    <div className="flex flex-col  py-16 bg-slate-100 ">
       <h3 className="text-4xl pb-14 text-center font-extrabold">
-        Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-purple-500 ">Reviews</span>.
+      Our{" "}
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-purple-500 ">
+        Students&#39;
+        </span>
+        {" "}
+        Buzzing Raves
       </h3>
-      <div className="flex flex-col justify-center items-center lg:flex-row lg:justify-between px-0 lg:px-16 xl:px-32 2xl:px-52">
+      <div className="flex flex-col justify-center items-center lg:flex-row lg:justify-between px-0 lg:px-16 xl:px-32 2xl:px-72">
         <div className="flex flex-col justify-center items-center">
           <Image
             src={quotemark}
@@ -71,22 +76,27 @@ const HomeReviews = () => {
           >
             <Review
               review={
-                "accusamus. Deserunt explicabo hic sapiente. Voluptatibus, tempora."
+                "Their punctuality is no joke! I got my assignment right on time. It's a perfect combo of efficiency and quality. Highly Recommended!"
               }
             />
             <Review
               review={
-                "eaouf oiaeu naoeu ncpaieu cnapeu cnaieyfb aifnapiefn apecn apdkasndpu ansdoui naeifu baenfiaunefoaunedoamd;lkasnd;au"
+                "The communication with my writer was smooth, and the paper quality reflected genuine expertise. I must appreciate their attention to detail!"
               }
             />
             <Review
               review={
-                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla vitae nobis ab optio quisquam, atque minima! Saepe, repudiandae sint non quae nam neque "
+                "The revisions brought my assignment to a whole new level. They genuinely did a great job."
               }
             />
             <Review
               review={
-                "asfn ien paiouenf paoiuenfpo skjdnfaojswefnpo asunf sajd nfpesuofn sapojfn poseauf naposwefn aposeunf oasenf;la smdkfnoa seunf;o askjdnf pouesnfp aosefn poasdnf jksaefn pasouefn psoaufn "
+                "Of course, my queries were answered promptly, and the overall experience was good. It's a reliable service with a professional touch! Thanks for your assistance:)"
+              }
+            />
+            <Review
+              review={
+                "A practical choice for budget-conscious students. Highly recommended!"
               }
             />
           </Slider>
@@ -102,7 +112,7 @@ const HomeReviews = () => {
           alt="image for reviews"
           width={450}
           height={450}
-          className="object-cover opacity-50 px-2 pt-3"
+          className="object-cover px-2 pt-3"
         />
       </div>
     </div>
